@@ -1,0 +1,5 @@
+
+val value = test.time[BigInt](test.fib2(BigInt(10000)))
+println(value.toString)
+
+

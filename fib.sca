@@ -1,0 +1,45 @@
+import scala.math._
+
+class test 
+{
+}
+
+object test {
+	def fib2(n: BigInt) = {
+	  var a:BigInt = 0
+	  var b:BigInt = 1
+	
+	  def next(a: BigInt, b: BigInt) = Pair(b, a+b);
+	
+	  var i = 0
+	
+	  while(i < n) {
+	    val Pair(c, d) = next(a, b);
+	
+	    a = c
+	    b = d
+	
+	    i = i + 1
+	  }
+	
+	  a
+	}
+
+	var x = 100
+	def time[A](a: => A) = {
+		val now = System.nanoTime
+		val result = a
+		val micros = (System.nanoTime - now) / 1e6
+		println("%f microseconds".format(micros))
+		result
+	}
+	def fib(n: Int) : Int = {
+	  if (n < 2) {
+	    return n
+	  }
+	  else {
+	    return fib(n-1) + fib(n-2)
+	  }
+	}
+}
+
