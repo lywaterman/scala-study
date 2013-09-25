@@ -1,7 +1,8 @@
 
 //val value = test.time[BigInt](test.fib2(BigInt(10000)))
-//val value = test.time[Int](test.fib(40))
-//println(value.toString)
+println("start fib")
+val value = test.time[Int](test.fib(40))
+println(value.toString)
 
 object t {
     val y =111 
