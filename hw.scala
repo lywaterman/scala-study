@@ -31,5 +31,9 @@ def main(args: Array[String]) = {
     //eval.compile(eval.toSource(new File("fib.sca")))
     //val value1 = eval.apply[Int]("test.x", false)
    
+
+    eval.apply[Unit]("test.x = 1024", false)
+    eval.compile(eval.toSource(new File("fib.sca")))
+    eval.apply[Unit](eval.toSource(new File("fib_call.sca")), false)
    }
 }

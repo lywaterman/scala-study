@@ -1,5 +1,20 @@
 
-val value = test.time[BigInt](test.fib2(BigInt(10000)))
-println(value.toString)
+//val value = test.time[BigInt](test.fib2(BigInt(10000)))
+//val value = test.time[Int](test.fib(40))
+//println(value.toString)
+
+object t {
+    val y =111 
+}
+
+class t {
+    val tt = 123
+}
+
+val x1 = new t
+
+println(test.x)
+
+println(x1.tt)
 
 
